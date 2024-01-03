@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+  }
+  .navbar{
+    height: 60px;
+    background-color:#110f0ffc ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+  .border{
+    border: 2px solid transparent;
+    
+    
+  }
+  .border:hover{
+    border: 2px solid white;
+  }
+  .nav-logo{
+    width: 100px;
+    height: 50px;
+  }
+  .logo{
+    width: 100px;
+    height: 50px;
+    
+    color: white;
+    background-image:url(amazon_logo.png);
+    display: flex;
+  
+  
+  }
+  .nav-location{
+    width: 90px;
+    height: 55px;
+    margin-bottom: 8px;
+  
+  
+  }
+  .first-location{
+    
+    
+    font-size: 0.80rem;
+    margin-left: 14px;
+    color: #CCCCCC;
+    position: relative;
+    top: 17px; 
+  
+  
+  }
+  
+  .second-location{
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    
+  }
+  
+  
+  .location{
+    width: 88px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .location i{
+    margin-right: 2px;
+    margin-top: 2px;
+  }
+  .nav-search{
+    width: 750px;
+    
+    height: 50px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+  .select-option{
+    width: 70px;
+    height: 42px;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: #E6E6E6;
+  
+  }
+  
+  .search{
+    width: calc(100% - 100px);
+    height: 40px;
+    font-size: 0.90rem;
+    background-color: #ffffff;
+  
+    border: none;
+    padding-left: 8px;
+  }
+  .search-bar{
+    width: 45px;
+    height: 40px;
+    background-color: rgba(255, 255, 0, 0.942);
+    font-size: 1.2rem;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    
+  }
+  .nav-language{
+    display: flex;
+    width: 55px;
+    height: 33px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    
+  
+    
+  
+  }
+  .language-option{
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    
+  }
+  .right-nav{
+  width: 360px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  }
+  .account-sign-in{
+    width: 131px;
+    height: 40px;
+    color: #FFFFFF;
+  }
+  .sign-in{
+  
+    font-size: 0.90rem;
+  }
+  .select-account{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    
+    background-color: transparent;
+  }
+  .returns{
+    width: 76px;
+    height: 41px;
+    color: #FFFFFF;
+  }
+  .returns > :nth-child(1){
+    font-size: 0.80rem;
+  }
+  .returns > :nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .cart{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 45px;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+  }
+  .nav-main{
+    height: 38px;
+    background: #232F32;
+    display: flex;
+    align-items: center;
+  }
+  .hamberger-menu{
+    width: 58px;
+    height: 31px;
+    color: #FFFFFF;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    padding: 0 9px;
+  }
+  .progressive-content a{
+    width: 956px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: #FFFFFF;
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      
+      flex-direction: column;
+      height: auto;
+      padding: 10px; 
+    }
+  
+    .nav-logo {
+      width: 30%;
+      text-align: center;
+      
+      
+    }
+  
+    .nav-location,
+    .right-nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px; 
+      box-sizing: border-box; 
+      padding: 8px;
+    }
+  
+    .nav-location {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+      
+      align-items: center;
+      width: 30%;
+  
+    
+    }
+  
+    .first-location {
+      
+      margin-bottom: 13px;
+      font-size: 0.80rem;
+      color: #CCCCCC;
+      
+    }
+  
+    .second-location {
+      font-size: 1.2rem;
+      margin-left: 10px;
+      color: #FFFFFF;
+      font-weight: bold;
+  
+      
+    
+    }
+  
+    .nav-main {
+      width: 100%;
+      text-align: center;
+     
+    }
+  
+    .hamberger-menu {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px; 
+      box-sizing: border-box; 
+      padding: 2px;
+    }
+  
+    .progressive-content a {
+      width: 40%;
+      margin-top: 10px; 
+      box-sizing: border-box; 
+      margin-bottom: 7px;
+      
+    }
+  
+    .nav-search {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px; 
+      box-sizing: border-box; 
+      padding: 8px;
+    }
+  
+    
+    .search {
+      margin-top: 2px; 
+    }
+  
+    .search-bar {
+      margin-top: 3px; 
+    }
+    .hero-section img{
+      width:100vw;
+      height: 50vh;
+    }
+    body {
+      overflow-x: hidden; 
+    }
+  
+  
+  } 
+  
+  
+  
